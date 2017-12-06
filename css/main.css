@@ -1,3 +1,8 @@
+
+body {
+    margin-bottom: 50px;
+}
+
 /* Header */
 header {
     background: #3a3a3a;
@@ -5,7 +10,8 @@ header {
     color: #c1c1c1;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 2 ;
+    top: 0;
 }
 
 header h4 {
@@ -14,6 +20,14 @@ header h4 {
 
 header h1 {
     text-align: right;
+}
+
+#top_div {
+    margin-top: 117px;
+    text-align: center;
+    background: #c1c1c1;
+    padding: 10px;
+    font-size: 20pt;
 }
 
 #logo {
@@ -26,6 +40,8 @@ footer {
     color: #c1c1c1;
     width: 100%;
     height:50px;
+    position: fixed;
+    bottom: 0;
 }
 footer a {
     float: right;
@@ -49,13 +65,15 @@ footer a:hover {
 }
 
 #hero_image {
-    opacity: 0.5;
+    background: url(../images/code_half.jpg);
+    background-size: cover;
+    width: 100%;
 }
 
 /* Project Cards */
 .project_card_box {
     background: #d2d2d2;
-    margin: 10px;
+    margin: 0px 50px 50px 50px;
     border: #3a3a3a solid 5px;
     border-radius: 5px;
     padding: 3px;
@@ -63,10 +81,20 @@ footer a:hover {
 
 .project_cards {
     text-align: center;
+    opacity: 1;
 }
 
 .project_cards a {
     color: dimgray;
+}
+
+.project_cards h3 {
+    background: white;
+    width: fit-content;
+    padding: 4px 20px;
+    border-radius: 4px;
+    text-align: left;
+
 }
 
 .project_cards a:hover {
